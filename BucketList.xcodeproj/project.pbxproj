@@ -15,6 +15,7 @@
 		8547F24C295E2E8400B1E3E5 /* BucketListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8547F24B295E2E8400B1E3E5 /* BucketListUITests.swift */; };
 		8547F24E295E2E8400B1E3E5 /* BucketListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8547F24D295E2E8400B1E3E5 /* BucketListUITestsLaunchTests.swift */; };
 		8547F25C295E3E4F00B1E3E5 /* Bundle-decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8547F25B295E3E4F00B1E3E5 /* Bundle-decodable.swift */; };
+		8547F25F295F9F8900B1E3E5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8547F25E295F9F8900B1E3E5 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8547F24B295E2E8400B1E3E5 /* BucketListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITests.swift; sourceTree = "<group>"; };
 		8547F24D295E2E8400B1E3E5 /* BucketListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8547F25B295E3E4F00B1E3E5 /* Bundle-decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-decodable.swift"; sourceTree = "<group>"; };
+		8547F25E295F9F8900B1E3E5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				8547F231295E2E8200B1E3E5 /* ContentView.swift */,
+				8547F25E295F9F8900B1E3E5 /* Location.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			files = (
 				8547F232295E2E8200B1E3E5 /* ContentView.swift in Sources */,
 				8547F230295E2E8200B1E3E5 /* BucketListApp.swift in Sources */,
+				8547F25F295F9F8900B1E3E5 /* Location.swift in Sources */,
 				8547F25C295E3E4F00B1E3E5 /* Bundle-decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
