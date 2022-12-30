@@ -137,6 +137,7 @@
 		8547F25A295E3E3800B1E3E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8547F25E295F9F8900B1E3E5 /* Location.swift */,
 				8547F25B295E3E4F00B1E3E5 /* Bundle-decodable.swift */,
 			);
 			path = Model;
@@ -146,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				8547F231295E2E8200B1E3E5 /* ContentView.swift */,
-				8547F25E295F9F8900B1E3E5 /* Location.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
