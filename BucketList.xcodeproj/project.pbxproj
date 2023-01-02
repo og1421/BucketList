@@ -20,6 +20,7 @@
 		8547F2632960A61400B1E3E5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8547F2622960A61400B1E3E5 /* Result.swift */; };
 		8547F265296205E200B1E3E5 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8547F264296205E200B1E3E5 /* ContentView-ViewModel.swift */; };
 		8547F26729620B2500B1E3E5 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8547F26629620B2500B1E3E5 /* FileManager-DocumentsDirectory.swift */; };
+		8547F26A2963981900B1E3E5 /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8547F2692963981800B1E3E5 /* EditView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		8547F2622960A61400B1E3E5 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		8547F264296205E200B1E3E5 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		8547F26629620B2500B1E3E5 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
+		8547F2692963981800B1E3E5 /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8547F25D295E3E5800B1E3E5 /* View */,
+				8547F268296397EF00B1E3E5 /* ViewModel */,
 				8547F25A295E3E3800B1E3E5 /* Model */,
 				8547F22F295E2E8200B1E3E5 /* BucketListApp.swift */,
 				8547F233295E2E8300B1E3E5 /* Assets.xcassets */,
@@ -146,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				8547F26629620B2500B1E3E5 /* FileManager-DocumentsDirectory.swift */,
-				8547F264296205E200B1E3E5 /* ContentView-ViewModel.swift */,
 				8547F2622960A61400B1E3E5 /* Result.swift */,
 				8547F25E295F9F8900B1E3E5 /* Location.swift */,
 				8547F25B295E3E4F00B1E3E5 /* Bundle-decodable.swift */,
@@ -161,6 +163,15 @@
 				8547F26029608B1C00B1E3E5 /* EditView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8547F268296397EF00B1E3E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8547F264296205E200B1E3E5 /* ContentView-ViewModel.swift */,
+				8547F2692963981800B1E3E5 /* EditView-ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				8547F26129608B1C00B1E3E5 /* EditView.swift in Sources */,
 				8547F230295E2E8200B1E3E5 /* BucketListApp.swift in Sources */,
 				8547F25F295F9F8900B1E3E5 /* Location.swift in Sources */,
+				8547F26A2963981900B1E3E5 /* EditView-ViewModel.swift in Sources */,
 				8547F265296205E200B1E3E5 /* ContentView-ViewModel.swift in Sources */,
 				8547F26729620B2500B1E3E5 /* FileManager-DocumentsDirectory.swift in Sources */,
 				8547F25C295E3E4F00B1E3E5 /* Bundle-decodable.swift in Sources */,

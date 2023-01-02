@@ -14,7 +14,13 @@ extension ContentView {
         @Published var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
         @Published private (set) var locations: [Location]
         @Published var selectedPlace: Location?
-        @Published var isUnlocked = false
+        
+        @Published var isUnlocked = true
+        @Published var showingErrorAlert = false
+        
+        @Published var errorMessage: NSError?
+        
+        
         
         let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
         
@@ -66,7 +72,9 @@ extension ContentView {
                             self.isUnlocked = true
                         }
                     } else {
-                        //error 
+                        Task { @MainActor in
+                            self.errorMessage = error
+                        }
                     }
                 }
             } else {

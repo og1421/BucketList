@@ -48,12 +48,18 @@ struct ContentView: View {
                             viewModel.addLocation()
                         } label: {
                             Image(systemName: "plus")
+                                .padding()
+                                .background(.black.opacity(0.75))
+                                .font(.title)
+                                .clipShape(Circle())
+                                .padding(.trailing)
+
                         }
-                        .padding()
-                        .background(.black.opacity(0.75))
-                        .font(.title)
-                        .clipShape(Circle())
-                        .padding(.trailing)
+//                        .padding()
+//                        .background(.black.opacity(0.75))
+//                        .font(.title)
+//                        .clipShape(Circle())
+//                        .padding(.trailing)
                     }
                 }
             }
@@ -65,11 +71,18 @@ struct ContentView: View {
         } else {
             Button("Unlock places") {
                 viewModel.authenticate()
+                
+                if !viewModel.isUnlocked {
+                    viewModel.showingErrorAlert = true
+                }
             }
             .padding()
             .background(.blue)
             .foregroundColor(.white)
             .clipShape(Capsule())
+            .alert("Authentication Failed", isPresented: $viewModel.showingErrorAlert) {
+                Button("Retry", role: .cancel) { }
+            }
         }
     }
 }
